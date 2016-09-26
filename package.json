@@ -1,5 +1,5 @@
 {
-  "name": "Angular AOT compilation and tree shaking - Example",
+  "name": "Angular-AOT-compilation-and-tree-shaking-Example",
   "version": "1.0.0",
   "scripts": {
     "start": "npm run aot && tsc && \"node_modules/.bin/http-server\" -p 8000",
