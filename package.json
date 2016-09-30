@@ -2,11 +2,13 @@
   "name": "Angular-AOT-compilation-and-tree-shaking-Example",
   "version": "1.0.0",
   "scripts": {
-    "start": "npm run tsc && \"node_modules/.bin/http-server\" -p 8000",
-    "lite": "lite-server",
+    "start": "npm comp && \"node_modules/.bin/http-server\" -p 8000",
     "postinstall": "typings install",
-    "comp": "node_modules/.bin/ngc -p tsconfig-aot.json && \"node_modules/.bin/rollup\" -c rollup.js && \"node_modules/.bin/rollup\" -c rollup-jit.js",
+    "build": "npm run ngc && npm run rollup && npm run rollup-jit",
     "tsc": "tsc",
+    "ngc": "node_modules/.bin/ngc -p tsconfig.json",
+    "rollup": "node_modules/.bin/rollup -c rollup.js",
+    "rollup-jit": "node_modules/.bin/rollup -c rollup-jit.js",
     "typings": "typings"
   },
   "license": "MIT",
