@@ -2,7 +2,7 @@
   "name": "Angular-AOT-compilation-and-tree-shaking-Example",
   "version": "1.0.0",
   "scripts": {
-    "start": "npm comp && \"node_modules/.bin/http-server\" -p 8000",
+    "start": "npm run build && \"node_modules/.bin/http-server\" -p 8000",
     "postinstall": "typings install",
     "build": "npm run ngc && npm run rollup && npm run rollup-jit",
     "tsc": "tsc",
